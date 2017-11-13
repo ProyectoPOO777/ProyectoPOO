@@ -1,0 +1,22 @@
+-- Table: public.clientes
+
+-- DROP TABLE public.clientes;
+
+CREATE TABLE public.clientes
+(
+    idcliente integer NOT NULL DEFAULT nextval('clientes_idcliente_seq'::regclass),
+    primernombre character(100) COLLATE pg_catalog."default" NOT NULL,
+    primerapellido character(100) COLLATE pg_catalog."default" NOT NULL,
+    segundoapellido character(100) COLLATE pg_catalog."default" NOT NULL,
+    identidad character(100) COLLATE pg_catalog."default" NOT NULL,
+    telefonocasa character(100) COLLATE pg_catalog."default" NOT NULL,
+    telefonomovil character(100) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT clientes_pkey PRIMARY KEY (idcliente)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.clientes
+    OWNER to postgres;

@@ -1,0 +1,20 @@
+-- Table: public.prestamos
+
+-- DROP TABLE public.prestamos;
+
+CREATE TABLE public.prestamos
+(
+    idcliente integer NOT NULL,
+    numeroprestamo integer NOT NULL,
+    cantidadprestamo numeric(10,2) NOT NULL,
+    fechaautorizacion date,
+    fechaentrega date,
+    cuota integer NOT NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.prestamos
+    OWNER to postgres;
