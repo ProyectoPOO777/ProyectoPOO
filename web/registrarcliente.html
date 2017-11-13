@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro de Cliente</title>
+</head>
+<body>
+<center>
+<br>
+<center><img src="logCOP.png" height="150px" /><h1>Registro de prestamos</h1></center>
+
+<script type="text/javascript">
+    function atras(){
+        window.location="pagina.html";
+    }   
+
+</script>
+
+ <form action="registrarcliente.php" method="post">
+    <div>
+        <label for="pnombre">Primer Nombre:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="pnombre" required/>
+    </div>
+    <br>
+    <div>
+        <label for="papellido">Primer Apellido:&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="papellido" required/>
+    </div>
+    <br>
+    <div>
+        <label for="sapellido">Segundo Apellido:</label>
+        <input type="text" name="sapellido" required/>
+    </div>
+    <br>
+    <div>
+        <label for="identidad">Identidad:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="identidad" required/>
+    </div>
+    <br>
+    <div>
+        <label for="telcasa">Telefono Casa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="telcasa" required/>
+    </div>
+    <br>
+    <div>
+        <label for="telmovil">Telefono Movil:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="telmovil" required />
+    </div>
+    <br>
+    <br>
+     <button type="submit" value="Guardar Registro">Guardar Registro</button>&nbsp;&nbsp;
+     <input onclick=atras() type=button value='Inicio'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+</center>
+</body>
+</html>

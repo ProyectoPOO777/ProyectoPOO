@@ -1,0 +1,15 @@
+a {
+	font-size: 22px;
+	background: #AF7AC5;
+	padding: 5px;
+	margin-left: -5px;
+	border: solid 1px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover{
+	background: #8E44AD;
+}
