@@ -1,4 +1,0 @@
-CREATE TABLE clientes(idcliente  SERIAL PRIMARY KEY, primernombre CHARACTER(245) NOT NULL,
-primerapellido CHARACTER(245) NOT NULL, segundoapellido CHARACTER(245) NOT NULL,
-identidad CHARACTER(245) NOT NULL, telefonocasa CHARACTER(245) NOT NULL, 
-telefonomovil CHARACTER(245) NOT NULL);
