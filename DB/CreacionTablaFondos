@@ -1,0 +1,17 @@
+-- Table: public.fondos
+
+-- DROP TABLE public.fondos;
+
+CREATE TABLE public.fondos
+(
+    totalfondos numeric(10,2) NOT NULL,
+    prestado numeric(10,2) NOT NULL,
+    fondoactual numeric(10,2) NOT NULL
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.fondos
+    OWNER to postgres;
