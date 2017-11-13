@@ -1,14 +1,17 @@
 <?php
-	class Conexion{
-		//Conexion
-		function conectar(){
-			$dbconn = pg_connect("host=localhost port=5432 dbname=basedatos user=postgres password=root")
-		    or die('No se ha podido conectar: ' . pg_last_error());
-				echo "Conexion Exitosa";
-		}
+	class conexion{
+    private $host="localhost";
+    private $port="5432";
+    private $user="postgres";
+    private $password="root";
+    private $dbname="postgres";
+    
 
-		function funcion(){
-			echo "phpCall";
-		}
-	}
+    function conectar(){
+ 	$connect = pg_connect("host=$this->host dbname=$this->dbname port=$this->port user=$this->user password=$this->password");
+	    if(!$connect)
+	        echo "<p><i>No Conectado</i></p>"; 
+    }
+    }
+
 ?>
